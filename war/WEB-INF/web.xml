@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+
+<!-- 
+	<servlet>
+		<servlet-name>CollegeChakhna</servlet-name>
+		<servlet-class>com.collegechakhna.CollegeChakhnaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CollegeChakhna</servlet-name>
+		<url-pattern>/collegechakhna</url-pattern>
+	</servlet-mapping>
+	
+ -->	
+	<servlet>
+		<servlet-name>Users</servlet-name>
+		<servlet-class>com.collegechakhna.server.servlets.UsersServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Users</servlet-name>
+		<url-pattern>/users</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Articles</servlet-name>
+		<servlet-class>com.collegechakhna.server.servlets.ArticlesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Articles</servlet-name>
+		<url-pattern>/articles</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Categories</servlet-name>
+		<servlet-class>com.collegechakhna.server.servlets.CategoriesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Categories</servlet-name>
+		<url-pattern>/categories</url-pattern>
+	</servlet-mapping>
+	
+	
+	<welcome-file-list>
+		<welcome-file>blog.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
